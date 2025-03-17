@@ -1,0 +1,989 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  background-color: white;
+}
+
+
+h1,
+p {
+  margin: 0;
+}
+
+/* Logo Line */
+.logo-line {
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+
+/* Global Styles (Defaults for Large Screens: Desktop > 992px) */
+body {
+  font-size: 16px; /* Base font size for body text */
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+button, label {
+  font-size: 16px;
+}
+
+.caption, .metadata {
+  font-size: 14px;
+}
+
+/* Medium Screens: Tablets (480px - 992px) */
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 16px; /* Base font size for body text */
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  button, label {
+    font-size: 16px;
+  }
+
+  .caption, .metadata {
+    font-size: 14px;
+  }
+}
+
+/* Small Screens: Mobile (320px - 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Base font size for body text */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  button, label {
+    font-size: 14px;
+  }
+
+  .caption, .metadata {
+    font-size: 12px;
+  }
+}
+
+
+
+
+/* Header */
+.page-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: auto;
+  width: 100%;
+  
+}
+
+.page-links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar-brand {
+  letter-spacing: 0.1rem;
+}
+
+.navbar-nav a {
+  margin: 0 10px;
+  font-weight: 500;
+  color: black !important;
+  font-weight: 500 !important;
+}
+
+.nav-icons i {
+  margin: 0 10px;
+  color: black;
+}
+
+
+
+.nav-icons .i-link:focus,
+.nav-icons .i--link:active,
+.nav-icons .i--link.active {
+  color: inherit !important;
+  /* Retain the original color */
+  text-decoration: underline 2px !important;
+  /* Remove underline if there */
+  font-weight: bold !important;
+  /* Set to normal, or bold if needed */
+  background: none !important;
+  /* Ensure no background on active/focus */
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.active {
+  color: inherit !important;
+  /* Retain the original color */
+  text-decoration: underline 2px !important;
+  /* Remove underline if there */
+  font-weight: bold !important;
+  /* Set to normal, or bold if needed */
+  background: none !important;
+  /* Ensure no background on active/focus */
+}
+
+
+/* Prevent right-side icons from highlighting */
+#icon a {
+  color: black;
+  /* Ensure the icon color is black */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+#icon a:focus,
+#icon a:active {
+  color: black;
+  /* Keep color black on focus/active */
+  outline: none;
+  /* Remove default outline */
+  background: none;
+  /* Remove background */
+}
+
+
+
+/* Text + Image Section Styling */
+
+.title-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: auto;
+}
+
+.title-with-lines .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  margin: 0 5px;
+}
+
+.title-with-lines h1 {
+  font-family: 'Marcellus SC', serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.text-center-para {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 20px 30px;
+  text-align: justify;
+}
+
+/* .text-center {
+  padding-bottom: 40px;
+} */
+
+.text-center-btn {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  line-height: 33px;
+  text-align: center;
+  padding: 10px 50px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text-center-btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000;
+
+}
+
+/* Carousel Image Slider */
+.carousel-caption h5 {
+  color: #ffffff;
+  padding: 5px 0px;
+  position: absolute;
+  bottom: 0px;
+  text-transform: uppercase;
+  font-family: 'Marcellus SC', serif;
+}
+
+.carousel-caption-image {
+  text-align: center;
+  width: auto;
+  height: 275px;
+}
+
+/* Responsive Design */
+
+/* Tablet (up to 992px) */
+@media (max-width: 992px) {
+  .title-with-lines h1 {
+      line-height: 40px;
+  }
+
+  .text-center p {
+      line-height: 28px;
+      padding: 15px 20px;
+  }
+
+  .text-center-btn {
+      padding: 10px 30px;
+  }
+
+  .carousel-item img {
+      width: 100%; /* Scale image to fit container */
+      height: auto;
+      padding: 20px 0;
+  }
+  
+}
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .title-with-lines h1 {
+      line-height: 35px;
+  }
+
+  .text-center p {
+      line-height: 24px;
+      padding: 10px 15px;
+  }
+
+  .text-center-btn {
+      padding: 8px 20px;
+  }
+
+  .carousel-item img {
+      width: 100%; /* Scale image to fit container */
+      height: auto;
+  }
+  
+  .carousel-caption h5 {
+      padding: 5px;
+  }
+
+  /* Stack layout adjustments */
+  .row.mt-5.align-items-center.text-center {
+      flex-direction: column;
+  }
+
+  .col-lg-6 {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+
+  
+/* How It Works Section Styling */
+.how-it-works {
+  background-color: #F5F5F5;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.how-it-works-title {
+  font-family: 'Marcellus SC', serif;
+  font-weight: 400;
+  line-height: 50.16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Horizontal Line Styling */
+.line-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 100%; 
+  height: 1px ;
+  background-color: black;
+  border: none;
+}
+
+
+/* Image Container Styling */
+.steps-image-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.steps-image {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 992px) {
+  /* Adjust line and image width for mobile */
+  .divider {
+    width: 90%; /* Full width on mobile */
+  }
+  .steps-image {
+    width: 100%; /* Make image responsive */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+.line-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.how-it-works-title {
+  margin-bottom: -10px;
+}
+
+
+.divider {
+  width: auto; /* Adjust based on preferred size */
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+}
+
+@media(max-width: 768px){
+.steps-image-container{
+  margin-top: 40px;
+}
+}
+
+/* Custom Design Section */
+.custom-design-section {
+  text-align: center;
+  font-family: 'Marcellus SC', serif;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.custom-design-section h1 {
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.line1 {
+  flex-grow: 1;
+  height: 2px;
+  background-color: black;
+  margin: 0 30px;
+  margin-right: 110px;
+  margin-left: 110px;
+}
+
+.custom-design-section .buttons {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-design-section .buttons button {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 50px;
+  border: 2px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-design-section .buttons button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.custom-design-section .image-display {
+  margin-top: 30px;
+}
+
+.custom-design-section .image-display img {
+  width: auto;
+  max-width: auto;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  /*.custom-design-section .line1 {
+    /* margin: 0 20px;  */
+  }
+
+  .custom-design-section .buttons {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  .custom-design-section .buttons button {
+    padding: 8px 20px;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+    white-space: nowrap; /* Prevent button text from wrapping */
+  }
+
+  .custom-design-section .image-display img {
+    max-width: 100%;
+  }
+
+
+@media (max-width: 480px) {
+  .custom-design-section .buttons button {
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 360px) {
+.custom-design-section .buttons button {
+  padding: 6px 8px;
+}
+}
+
+  
+
+/* Customize Form */
+
+.form-section {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Marcellus SC', serif;
+  background-color: #ffffff;
+  margin: 20px 0;
+
+}
+
+.form-section h1 {
+  font-weight: 400;
+}
+
+/* .form-section hr {
+  width: 1165px;
+  margin: 20px auto;
+  border: 2px solid #000;
+} */
+ .line{
+  flex-grow: 1;
+  height: 0.5px;
+  background-color: black;
+  margin: 0 30px; /* Spacing between the line and the title */
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+
+ }
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  position: relative;
+  margin: 20px 0;
+  width: 48%;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #000;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #000;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-10%);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background: white; /* Added for float effect */
+  padding: 0 5px; /* Added for better float appearance */
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  color: #000;
+}
+
+/* Button styling */
+.form-group button {
+  padding: 12px 60px;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.title-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: auto;
+}
+
+.title-with-lines .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  margin: 0 5px;
+}
+
+.title-with-lines h1 {
+  font-family: 'Marcellus SC', serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 10px;
+}
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  #cutomize-form {
+      margin: 15px; /* Adjust the margin for mobile */
+  }
+
+  .form-row {
+      display: flex;
+      flex-direction: column; /* Stack the fields vertically on mobile */
+      gap: 10px; /* Add space between form fields */
+  }
+
+  .form-group {
+      margin-bottom: 15px; /* Add margin to form fields */
+  }
+
+  .full-width {
+      width: 100%; /* Ensure full width on mobile for full-width elements */
+  }
+
+  .image-upload {
+      margin-bottom: 15px; /* Margin for image upload */
+  }
+}
+
+
+
+
+
+
+
+
+/* Footer Section */
+/* Custom footer styles */
+footer {
+  background-color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 0;
+  color: black;
+}
+footer h3 {
+  font-weight: bold; /* Bold headings */
+  margin-bottom: 1rem; 
+  text-transform: none; 
+}
+footer p {
+  margin-bottom: 1rem; /* Spacing below paragraphs */
+}
+footer .list-unstyled {
+  padding-left: 0; /* Remove default padding */
+}
+footer .list-unstyled li {
+  margin-bottom: 0.5rem; /* Spacing between links */
+}
+footer .text-reset {
+  color: #000000; /* Bootstrap link color */
+  text-decoration: none; /* Remove underline */
+}
+footer .text-reset:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+footer .btn-primary {
+  background-color: #000000; /* Button color */
+  border-color: #000000; /* Button border color */
+}
+footer .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+footer .social-icons a {
+  color: #495057; /* Icon color */
+}
+footer .social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+footer .p-3 {
+  border-top: 1px solid #dee2e6; /* Light border above copyright text */
+}
+.footer-links {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align text to the left */
+}
+.footer-links li {
+  margin-bottom: 0.5rem; /* Spacing between links */
+}
+.footer-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Link color */
+}
+.footer-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #000000; /* Change color on hover */
+}
+.footer-contact {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  margin-bottom: 0.5rem;
+}
+.footer-contact li{
+  margin-bottom: 10px;
+}
+.social-media {
+  text-align: left; /* Center the heading */
+  margin-bottom: 20px; /* Space below the social media section */
+}
+.social-icons {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  display: flex; /* Align items in a row */
+  justify-content: left; /* Center the icons */
+  margin-top: 10px; /* Space above the icons */
+}
+.social-icons li {
+  margin: 0 10px; /* Space between icons */
+  margin-left: 0px;
+}
+.social-icons a {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  width: 40px; /* Width of the circular background */
+  height: 40px; /* Height of the circular background */
+  border-radius: 50%; /* Make it a circle */
+  background-color: white; /* Circle background color */
+  border: 2px solid black; /* Border color for the circle */
+  transition: all 0.3s ease; /* Smooth transition */
+  text-decoration: none; /* Remove underline */
+}
+.social-icons a i {
+  color: black; /* Icon color */
+}
+.social-icons a:hover {
+  background-color: black; /* Change circle background on hover */
+}
+.social-icons a:hover i {
+  color: white; /* Change icon color on hover */
+}
+.rotated-phone {
+  transform: rotate(90deg);
+}
+.contact-info-container {
+  position: relative; /* Position relative for absolute children */
+  padding: 0 20px; /* Add padding to the left and right */
+}
+.contact-info-container::before,
+.contact-info-container::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  bottom: 0; /* Stretch the line to the bottom */
+  width: 1px; /* Width of the line */
+  background-color:  rgb(165, 161, 161); /* Color of the line */
+  display: none; /* Initially hide the lines */
+  height: 280px;
+  margin-left: -20px;
+}
+@media (min-width: 768px) {
+  .contact-info-container::before {
+      left: 0; 
+      display: block; 
+  }
+  .contact-info-container::after {
+      right: 0; 
+      display: block; 
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+@media (max-width: 767px) {
+  footer h3 {
+      text-align: left;
+  }  
+}
+@media (min-width: 768px) {
+  .contact-info-container::before {
+      left: 0; 
+      display: block; 
+  }
+  .contact-info-container::after {
+      right: 0; 
+      display: block; 
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+/* Right-align text on smaller screens */
+@media (max-width: 767px) {
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+  .social-media {
+      text-align: left; 
+  }
+  .social-icons {
+      justify-content: left; /
+  }
+}
+.newsletter-input-container {
+  display: flex; /* Use flexbox to align items */
+  position: relative; /* Enable positioning for absolute child elements */
+}
+.newsletter-email-input {
+  flex: 1; /* Allow input to take available space */
+  padding: 10px; /* Padding for the input */
+  border: 2px solid #dcd8d8; /* Border color */
+  /* border-radius: 4px 0 0 4px;  */
+}
+.submit-btn {
+  padding: 10px 20px; /* Padding for the button */
+  border: 2px solid #000000; /* Border color matching the input */
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+.submit-btn:hover {
+  background-color: #000000; 
+  color: #ffffff;
+}
+.footer-bottom {
+  text-align: left;
+  padding: 10px 60px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  margin-left: 45px;
+}
+.footer-bottom p{
+  text-align: center;
+
+}
+.contact-info-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  background-color: rgb(165, 161, 161);
+  display: none; 
+}
+@media (min-width: 992px) {
+  .contact-info-container::before {
+      left: -20px;
+      display: block;
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+a:active, .submit-btn:active {
+  color: black;
+  background-color: black;
+}
+.footer-links a:active, .social-icons a:active {
+  color: black;  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-info-container::before,
+  .contact-info-container::after {
+      display: none; 
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-column2
+  {
+      margin-top: 230px;
+      margin-left: -335px;
+      margin-right: -200px;
+      text-align: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .social-media{
+      margin-right: 400px;
+  }
+  }
+@media (min-width: 992px) {
+  .contact-info-container::before {
+      left: 0; 
+      display: block; 
+  }
+  .contact-info-container::after {
+      right: 0; 
+      display: block; 
+  }
+}
+@media (max-width: 768px) {
+  .footer-bottom {
+      margin-left: 30px; 
+      padding: 5px 0;
+  }
+}
+.row{
+  margin-left: 0px;
+}
+.footer-column2{
+  margin-right: 30px;
+}
+/* Responsive styles */
+@media (min-width: 576px) {
+  .newsletter-input-container {
+      flex-direction: row; 
+  }
+  .newsletter-email-input {
+      flex: 1; 
+      margin-bottom: 0; 
+  }
+  .submit-btn {
+      margin-left: 0px; /* Space between input and button */
+  }
+}
+@media (max-width: 575px) {
+  .newsletter-email-input {
+      font-size: 14px; /* Slightly smaller font on small screens */
+  }
+  .submit-btn {
+      font-size: 14px; /* Slightly smaller font on small screens */
+  }
+}
+@media (min-width: 600px) and (max-width:1024px){
+  .footer-bottom {
+      font-size: 14px; /* Slightly smaller font for tablets */
+      padding: 10px; /* Adjust padding for smaller screens */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically if needed */
+  }
+  .footer-bottom p {
+      margin: 0; /* Remove default margin */
+  }
+}
+
