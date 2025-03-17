@@ -1,0 +1,674 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  background-color: white;
+  font-size: 14px !important;
+
+}
+
+/* Logo Line */
+.logo-line {
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+/* Mobile specific styles */
+@media (max-width: 576px) {
+  .logo-line {
+    text-align: center;
+    padding: 25px 0;
+  }
+}
+
+
+/* Base styles */
+.filter-button-sidebar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+.search-box {
+  margin-left: 0; /* Removes the left margin */
+}
+/* Hover styles */
+.filter-button-sidebar:hover {
+  background-color: black;
+  color: white;
+}
+
+.search-box input {
+  margin-bottom: 10px;
+  border-radius: 0 !important;
+}
+
+h5 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+  border-radius: 0 !important;
+  /* margin-right: 20px !important; */
+  width: auto;
+  
+ 
+
+}
+
+.card-body {
+  text-align: left; /* Align all text content in the card body to the left */
+}
+
+
+
+.card-body h6 {
+  font-size: 16px;
+  text-align: left; 
+}
+
+ /* .card-body p { 
+  text-align: left; 
+  font-size: 20px !important;
+  margin: 0 0 5px !important; 
+  text-align: left;
+} */
+
+
+.card-details {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 0 0 5px; /* Reduced spacing below title */
+}
+
+.card-description {
+  font-size: 14px !important;
+  color: #555;
+  margin: 0 0 10px !important; /* Reduced spacing below description */
+}
+
+.card-price {
+  font-size: 20px !important; /* Increased price font size */
+  font-weight: bold;
+  color: #000;
+  margin: 0; /* Removed unnecessary spacing */
+}
+
+
+.btn {
+  border-radius: 0 !important;
+  width: 100%;
+  padding: 10px; 
+  text-align: center; 
+}
+
+/* Ensure search box input border is black */
+.search-box input {
+  border-color: black !important;
+}
+
+/* Change the border of dropdown/select elements */
+.form-select {
+  border-color: black !important;
+  color: black !important; /* Text color inside dropdown */
+  margin-right: 15px;
+}
+
+/* Change button background and border */
+.btn-primary {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.btn-primary:hover {
+  background-color: #333 !important; /* Slightly lighter for hover */
+  border-color: #333 !important;
+}
+
+/* Change focus border color for form elements */
+input:focus,
+.select:focus,
+button:focus {
+  border-color: black !important;
+  box-shadow: none !important;
+}
+
+
+/* Change pagination link border */
+.pagination .page-link {
+  color: black !important;
+  border-color: black !important;
+ 
+}
+
+/* Sidebar mobile button */
+button[data-bs-toggle="offcanvas"] {
+  background-color: black !important;
+  border-color: black !important;
+  color: white !important; /* Ensure button text remains readable */
+}
+
+/* Offcanvas close button */
+.offcanvas .btn-close {
+  color: black !important;
+}
+
+
+.pagination .page-link {
+  color: #000;
+  border-radius: 0 !important;
+}
+/* Ensure square corners for the dropdown */
+.form-select {
+  border-radius: 0 !important;
+}
+.product-item {
+  display: none;
+}
+
+.product-item.visible {
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.search-box {
+  margin-left: 0; /* Removes the left margin */
+}
+
+.title-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: auto;
+}
+
+.title-with-lines .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  margin: 0 5px;
+}
+
+.title-with-lines h1 {
+  font-family: 'Marcellus SC', serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+/* Sidebar scrollable only for mobile view */
+@media (max-width: 992px) {
+  #sidebar-content {
+    max-height: 70vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 991px) {
+  .d-none {
+    display: none !important;
+  }
+
+  .d-lg-none {
+    display: block !important;
+  }
+}
+
+/* Mobile specific styles */
+@media (max-width: 576px) {
+  .offcanvas-body {
+    padding: 0;
+  }
+
+  .card-body h6 {
+    font-size: 14px;
+  }
+}
+/* General styles for responsiveness */
+.container {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* For extra small devices (phones, <576px) */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .card-body h6 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .pagination .page-link {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .form-select {
+    font-size: 14px;
+  }
+}
+
+/* For small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-img-top {
+    height: 250px;
+  }
+
+  .card-body h6 {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .pagination .page-link {
+    font-size: 14px;
+  }
+}
+
+/* For medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .card-img-top {
+    height: 275px;
+  }
+
+  .card-body h6 {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .pagination .page-link {
+    font-size: 14px;
+  }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+    height: 300px;
+  }
+
+  .card-body h6 {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .pagination .page-link {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Custom footer styles */
+footer {
+  background-color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 0;
+  color: black;
+}
+footer h3 {
+  font-weight: bold; /* Bold headings */
+  margin-bottom: 1rem; 
+  text-transform: none; 
+}
+footer p {
+  margin-bottom: 1rem; /* Spacing below paragraphs */
+}
+footer .list-unstyled {
+  padding-left: 0; /* Remove default padding */
+}
+footer .list-unstyled li {
+  margin-bottom: 0.5rem; /* Spacing between links */
+}
+footer .text-reset {
+  color: #000000; /* Bootstrap link color */
+  text-decoration: none; /* Remove underline */
+}
+footer .text-reset:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+footer .btn-primary {
+  background-color: #000000; 
+  border-color: #000000; /* Button border color */
+}
+footer .btn-primary:hover {
+  background-color: #000000;
+}
+footer .social-icons a {
+  font-size: 1.5rem; /* Increase icon size */
+  color: #495057; /* Icon color */
+}
+footer .social-icons a:hover {
+  color: #000000; /* Change color on hover */
+}
+footer .p-3 {
+  border-top: 1px solid #dee2e6; /* Light border above copyright text */
+}
+.footer-links {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align text to the left */
+}
+.footer-links li {
+  margin-bottom: 0.5rem; /* Spacing between links */
+}
+.footer-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Link color */
+}
+.footer-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #000000; /* Change color on hover */
+}
+.footer-contact {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  margin-bottom: 0.5rem;
+}
+.footer-contact li{
+  margin-bottom: 10px;
+}
+.social-media {
+  text-align: left; /* Center the heading */
+  margin-bottom: 20px; /* Space below the social media section */
+}
+.social-icons {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  display: flex; /* Align items in a row */
+  justify-content: left; /* Center the icons */
+  margin-top: 10px; /* Space above the icons */
+}
+.social-icons li {
+  margin: 0 10px; /* Space between icons */
+  margin-left: 0px;
+}
+.social-icons a {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  width: 40px; /* Width of the circular background */
+  height: 40px; /* Height of the circular background */
+  border-radius: 50%; /* Make it a circle */
+  background-color: white; /* Circle background color */
+  border: 2px solid black; /* Border color for the circle */
+  transition: all 0.3s ease; /* Smooth transition */
+  text-decoration: none; /* Remove underline */
+}
+.social-icons a i {
+  color: black; /* Icon color */
+  font-size: 20px; /* Icon size */
+}
+.social-icons a:hover {
+  background-color: black; 
+}
+.social-icons a:hover i {
+  color: white; /* Change icon color on hover */
+}
+.rotated-phone {
+  transform: rotate(90deg);
+}
+.contact-info-container {
+  position: relative; /* Position relative for absolute children */
+  padding: 0 20px; /* Add padding to the left and right */
+}
+.contact-info-container::before,
+.contact-info-container::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  bottom: 0; /* Stretch the line to the bottom */
+  width: 1px; /* Width of the line */
+  background-color:  rgb(165, 161, 161); /* Color of the line */
+  display: none; /* Initially hide the lines */
+  height: 280px;
+  margin-left: -20px;
+}
+@media (min-width: 768px) {
+  .contact-info-container::before {
+      left: 0; 
+      display: block; 
+  }
+  .contact-info-container::after {
+      right: 0; 
+      display: block; 
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+@media (max-width: 767px) {
+  footer h3 {
+      text-align: left;
+  }  
+}
+@media (min-width: 768px) {
+  .contact-info-container::before {
+      left: 0; 
+      display: block; 
+  }
+  .contact-info-container::after {
+      right: 0; 
+      display: block; 
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+/* Right-align text on smaller screens */
+@media (max-width: 767px) {
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+  .social-media {
+      text-align: left; 
+  }
+  .social-icons {
+      justify-content: left; /
+  }
+}
+.newsletter-input-container {
+  display: flex; /* Use flexbox to align items */
+  position: relative; /* Enable positioning for absolute child elements */
+}
+.newsletter-email-input {
+  flex: 1; /* Allow input to take available space */
+  padding: 10px; /* Padding for the input */
+  border: 2px solid #dcd8d8; /* Border color */
+  /* border-radius: 4px 0 0 4px;  */
+}
+.submit-btn {
+  padding: 10px 20px; /* Padding for the button */
+  border: 2px solid #000000; /* Border color matching the input */
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+.submit-btn:hover {
+  background-color: #000000; 
+  color: #ffffff;
+}
+.footer-bottom {
+  text-align: center !important;
+  padding: 10px 60px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  margin-left: 45px;
+}
+.contact-info-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  background-color: rgb(165, 161, 161);
+  display: none; 
+}
+@media (min-width: 992px) {
+  .contact-info-container::before {
+      left: -20px;
+      display: block;
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+a:active, .submit-btn:active {
+  color: black;
+  /* background-color: black; */
+}
+.footer-links a:active, .social-icons a:active {
+  color: black;  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-info-container::before,
+  .contact-info-container::after {
+      display: none; 
+  }
+  footer h3, 
+  footer p, 
+  .footer-links a, 
+  .footer-contact li {
+      text-align: left; 
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-column2
+  {
+      margin-top: 230px;
+      margin-left: -335px;
+      margin-right: -200px;
+      text-align: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .social-media{
+      margin-right: 400px;
+  }
+  }
+@media (min-width: 992px) {
+  .contact-info-container::before {
+      left: 0; 
+      display: block; 
+  }
+  .contact-info-container::after {
+      right: 0; 
+      display: block; 
+  }
+}
+@media (max-width: 768px) {
+  .footer-bottom {
+      font-size: 16px;
+      margin-left: 30px; 
+      padding: 5px 0;
+      text-align: center;
+  }
+}
+.row{
+  margin-left: 0px;
+}
+.footer-column2{
+  margin-right: 30px;
+}
+/* Responsive styles */
+@media (min-width: 576px) {
+  .newsletter-input-container {
+      flex-direction: row; 
+  }
+  .newsletter-email-input {
+      flex: 1; 
+      margin-bottom: 0; 
+  }
+  .submit-btn {
+      margin-left: 0px; /* Space between input and button */
+  }
+}
+@media (max-width: 575px) {
+  .newsletter-email-input {
+      font-size: 14px; /* Slightly smaller font on small screens */
+  }
+  .submit-btn {
+      font-size: 14px; /* Slightly smaller font on small screens */
+  }
+}
+@media (min-width: 600px) and (max-width:1024px){
+  .footer-bottom {
+      font-size: 14px; /* Slightly smaller font for tablets */
+      padding: 10px; /* Adjust padding for smaller screens */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically if needed */
+  }
+  .footer-bottom p {
+      margin: 0; /* Remove default margin */
+  }
+}
+
+
